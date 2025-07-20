@@ -33,7 +33,7 @@ cd Book-recommendation-system-project
 
 ### 3. Install Dependencies
 ```bash
-pip install pandas numpy scikit-learn
+pip install pandas numpy scikit-learn datetime
 ```
 
 ### 4. Run the Notebook
