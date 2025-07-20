@@ -6,7 +6,7 @@ Readers are often overwhelmed by the sheer volume of available books and struggl
 ## Directory Structure
 
 ```plaintext
-Book-Recommendation/
+Book-recommendation-system-project/
 │
 ├── main.ipynb       # Jupyter notebook with code, analysis, and recommendations
 ├── README.md        # Project overview, setup instructions, and structure
