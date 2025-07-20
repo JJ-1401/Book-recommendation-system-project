@@ -1,0 +1,104 @@
+Book Recommendation System Output
+Generated on: 2025-07-20 14:56:54
+==================================================
+
+Starting Book Recommendation System Analysis...
+Loading datasets...
+Datasets loaded successfully!
+Books shape: (271360, 8)
+Ratings shape: (1149780, 3)
+Users shape: (278858, 3)
+Dataset shapes - Books: (271360, 8), Ratings: (1149780, 3), Users: (278858, 3)
+Null values in Books dataset: 7
+Null values in Ratings dataset: 0
+Null values in Users dataset: 110762
+Duplicate values - Books: 0, Ratings: 0, Users: 0
+
+==================================================
+POPULARITY BASED RECOMMENDATION SYSTEM
+==================================================
+Merged ratings with books: (1031136, 10)
+Original ratings shape: (1149780, 3)
+Some books from ratings were not found in books dataset
+
+Top 10 Popular Books:
+1. Harry Potter and the Prisoner of Azkaban (Book 3) by J. K. Rowling
+   Average Rating: 5.85, Number of Ratings: 428
+2. Harry Potter and the Goblet of Fire (Book 4) by J. K. Rowling
+   Average Rating: 5.82, Number of Ratings: 387
+3. Harry Potter and the Sorcerer's Stone (Book 1) by J. K. Rowling
+   Average Rating: 5.74, Number of Ratings: 278
+4. Harry Potter and the Order of the Phoenix (Book 5) by J. K. Rowling
+   Average Rating: 5.50, Number of Ratings: 347
+5. Harry Potter and the Chamber of Secrets (Book 2) by J. K. Rowling
+   Average Rating: 5.18, Number of Ratings: 556
+6. The Hobbit : The Enchanting Prelude to The Lord of the Rings by J.R.R. TOLKIEN
+   Average Rating: 5.01, Number of Ratings: 281
+7. The Fellowship of the Ring (The Lord of the Rings, Part 1) by J.R.R. TOLKIEN
+   Average Rating: 4.95, Number of Ratings: 368
+8. Harry Potter and the Sorcerer's Stone (Harry Potter (Paperback)) by J. K. Rowling
+   Average Rating: 4.90, Number of Ratings: 575
+9. The Two Towers (The Lord of the Rings, Part 2) by J.R.R. TOLKIEN
+   Average Rating: 4.88, Number of Ratings: 260
+10. To Kill a Mockingbird by Harper Lee
+   Average Rating: 4.70, Number of Ratings: 510
+Popularity-based recommendation system completed successfully!
+
+==================================================
+COLLABORATIVE FILTERING RECOMMENDATION SYSTEM
+==================================================
+Users with more than 200 ratings: 811
+Total users: 92106
+Books with more than 50 ratings: 679
+Total books after user filtering: 155845
+Final dataset shape after filtering and cleaning: (57236, 10)
+Unique users in final dataset: 810
+Unique books in final dataset: 679
+Pivot table created with shape: (679, 810)
+Books in pivot table: 679
+Users in pivot table: 810
+Cosine similarity matrix created with shape: (679, 679)
+Recommendation function created successfully!
+
+==============================
+TESTING RECOMMENDATIONS
+==============================
+
+Recommendations for 'The Da Vinci Code':
+  1. Angels &amp; Demons (Similarity: 0.2882)
+  2. Touching Evil (Similarity: 0.2375)
+  3. Saving Faith (Similarity: 0.2211)
+  4. The Sweet Potato Queens' Book of Love (Similarity: 0.2134)
+  5. Middlesex: A Novel (Similarity: 0.2133)
+'Angels & Demons' not found in the filtered dataset
+
+Recommendations for 'The Client':
+  1. The Pelican Brief (Similarity: 0.4447)
+  2. The Chamber (Similarity: 0.3864)
+  3. A Time to Kill (Similarity: 0.3632)
+  4. The Rainmaker (Similarity: 0.3539)
+  5. The Firm (Similarity: 0.3400)
+
+Recommendations for 'A Time to Kill':
+  1. The Pelican Brief (Similarity: 0.3943)
+  2. The Client (Similarity: 0.3632)
+  3. The Firm (Similarity: 0.3312)
+  4. The Chamber (Similarity: 0.2905)
+  5. The Rainmaker (Similarity: 0.2768)
+
+Recommendations for 'Interview with the Vampire':
+  1. The Vampire Lestat (Vampire Chronicles, Book II) (Similarity: 0.4253)
+  2. The Tale of the Body Thief (Vampire Chronicles (Paperback)) (Similarity: 0.3833)
+  3. The Witching Hour (Lives of the Mayfair Witches) (Similarity: 0.3097)
+  4. The Queen of the Damned (Vampire Chronicles (Paperback)) (Similarity: 0.2635)
+  5. Skeleton Crew (Similarity: 0.2434)
+
+==================================================
+ANALYSIS SUMMARY
+==================================================
+Total books in original dataset: 271360
+Total books used in collaborative filtering: 679
+Total users used in collaborative filtering: 810
+Popular books identified: 50
+
+Analysis completed! All results saved to output.txt
