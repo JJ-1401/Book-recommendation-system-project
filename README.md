@@ -28,7 +28,7 @@ Book-recommendation-system-project/
 ### 2. Clone the Repository
 ```bash
 git clone https://github.com/JJ-1401/Book-recommendation-system-project
-cd Book-Recommendation
+cd Book-recommendation-system-project
 ```
 
 ### 3. Install Dependencies
