@@ -1,7 +1,7 @@
 # Book Recommendation System
 
 ## Introduction / Problem Statement
-Readers are often overwhelmed by the sheer volume of available books and struggle to find titles that match their tastes. This project implements a **Content-Based Book Recommendation System** that analyzes book metadata (title, author, publisher, etc.) and user ratings to suggest new books tailored to individual preferences.
+Readers are often overwhelmed by the sheer volume of available books and struggle to find titles that match their tastes. This project implements a **Popularity-Based along with Content-Based Book Recommendation System** that analyzes book metadata (title, author, publisher, etc.) and user ratings to suggest new books tailored to individual preferences.
 
 ## Directory Structure
 
